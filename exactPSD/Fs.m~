@@ -1,0 +1,21 @@
+%% Velocity grid and number of realizations
+nbins=100
+v=linspace(-5e3,5e3,nbins);
+M=100;
+Fs=zeros(M,N);
+
+%% Generate and plot various realizations of exact PSD
+for ireal=1:M
+    vi=1e3*randn(1,N);
+    deltavvi=delta(v,vi);
+    Fs(ireal,:)=deltvavii;
+    
+    if (ireal<10)
+        plot(v,deltavvi);
+    end %if
+end %for
+
+
+%% Create an ensemble average
+nbins=
+fs
